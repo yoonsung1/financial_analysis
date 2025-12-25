@@ -43,13 +43,3 @@
 - 수익률 분포 및 fat-tail(heavy tail) 특성 분석  
 
 ---
-
-## 재현성
-본 프로젝트는 재현 가능성을 고려하여 설계되었습니다.
-
-아래 명령어를 통해 동일한 분석 환경을 구성할 수 있습니다.
-
-```bash
-python -m venv .venv
-source .venv/bin/activate   # Windows: .venv\Scripts\activate
-pip install -e .
