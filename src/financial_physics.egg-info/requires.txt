@@ -1,0 +1,16 @@
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+statsmodels>=0.14
+matplotlib>=3.8
+seaborn>=0.13
+yfinance>=0.2
+pyarrow>=14.0
+tqdm>=4.66
+
+[dev]
+black>=24.0
+isort>=5.13
+ruff>=0.1
+pytest>=7.4
+jupyterlab>=4.0

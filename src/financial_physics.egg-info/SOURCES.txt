@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+src/financial_physics/__init__.py
+src/financial_physics/config.py
+src/financial_physics/io.py
+src/financial_physics/preprocess.py
+src/financial_physics/utils.py
+src/financial_physics.egg-info/PKG-INFO
+src/financial_physics.egg-info/SOURCES.txt
+src/financial_physics.egg-info/dependency_links.txt
+src/financial_physics.egg-info/requires.txt
+src/financial_physics.egg-info/top_level.txt
+src/financial_physics/metrics/__init__.py
+src/financial_physics/metrics/msd.py

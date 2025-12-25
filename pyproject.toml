@@ -1,0 +1,70 @@
+[project]
+name = "financial-physics"
+version = "0.1.0"
+description = "금융 시계열을 통계물리학 관점에서 분석하는 프로젝트 (MSD, anomalous diffusion)"
+authors = [
+    { name = "Yoonseong Byun" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    # 핵심 수치/데이터
+    "numpy>=1.26",
+    "pandas>=2.1",
+
+    # 통계/과학 계산
+    "scipy>=1.11",
+    "statsmodels>=0.14",
+
+    # 시각화
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+
+    # 데이터 수집
+    "yfinance>=0.2",
+
+    # Parquet 엔진 (필수)
+    "pyarrow>=14.0",
+
+    # 보조
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = [
+    # 포맷/린트
+    "black>=24.0",
+    "isort>=5.13",
+    "ruff>=0.1",
+
+    # 테스트
+    "pytest>=7.4",
+
+    # 노트북
+    "jupyterlab>=4.0",
+]
+
+# -----------------------------
+# Tooling configuration
+# -----------------------------
+
+[tool.black]
+line-length = 88
+target-version = ["py310"]
+
+[tool.isort]
+profile = "black"
+
+[tool.ruff]
+line-length = 88
+select = ["E", "F", "I"]
+ignore = ["E203", "E266", "E501"]
+
+# -----------------------------
+# Build system (표준)
+# -----------------------------
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
